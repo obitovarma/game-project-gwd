@@ -1,0 +1,28 @@
+Unable to connect to the Houdini Engine server (pipe mode).
+
+Make sure you started the HARS server located in Houdini.
+HARS was running: False
+
+----------------------------------------
+Code: HAPI_RESULT_FAILURE
+HARC: Thrift TTransportException (type: NOT_OPEN) Check server address or port.
+Unable to open pipe
+------------------------------------------
+
+Please try the following:
+
+Check connection settings in HoudiniEngine > Plugin Settings > SESSION.
+Make sure pipe name is valid if using pipe mode, or server name and port are valid if using socket mode.
+Revert to default if not sure.
+
+Force close and reset sessions via HoudiniEngine > Session > Close All Sessions (then try again).
+
+Check that Houdini is installed here: C:/Program Files/Side Effects Software/Houdini 19.5.303
+You can reinstall Houdini and Unity plugin.
+Or override Houdini install location in HoudiniEngine > Plugin Settings > GENERAL
+
+Restart Unity and try again.
+
+Kill any HARS process on local machine. Or restart machine if not sure.
+
+Note this message will be logged to Console.
